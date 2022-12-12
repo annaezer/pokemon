@@ -9,11 +9,12 @@ function Pokemon({name}) {
             try {
                 const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
                 setPokemon(response.data);
-                console.log(pokemon);
+                // console.log(pokemon);
             } catch (e) {
                 console.error(e);
             }
         }
+
         fetchData();
     }, []);
 

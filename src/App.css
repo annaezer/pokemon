@@ -1,4 +1,6 @@
-
+main {
+    column-count: 3;
+}
 
 h2 {
     text-transform: capitalize;
