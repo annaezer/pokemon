@@ -30,7 +30,7 @@ function Pokemon({name}) {
                         <p><strong>Abilities: </strong></p>
                         <ul>
                             {pokemon.abilities.map((poke) => {
-                                return <li key={pokemon.name}> {poke.ability.name}</li>
+                                return <li key={`${poke.ability.name}-${pokemon.name}`}> {poke.ability.name}</li>
                             })} </ul>
                     </article>
                 </>}
